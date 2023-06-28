@@ -5,7 +5,7 @@ from PIL import Image
 import numpy as np
 
 # Diretório raiz das imagens
-data_dir = 'C:/visaocomputacional/aula-git/cavalo/horse-or-human'
+data_dir = 'cavalo\horse-or-human'
 
 # Pré-processamento das imagens
 image_size = (32, 32)  # Defina o tamanho desejado para as imagens
@@ -47,7 +47,7 @@ test_loss, test_accuracy = model.evaluate(train_generator)
 """abrir a imagem"""
 
 # Carregar a imagem
-image = Image.open('C:/visaocomputacional/aula-git/cavalo/horse-or-human/horses/teste.jpg')
+image = Image.open('cavalo\horse-or-human\horses\horse02-1.png')
 
 # Pré-processamento da imagem
 image = image.resize(image_size)
